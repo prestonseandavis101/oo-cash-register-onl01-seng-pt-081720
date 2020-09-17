@@ -1,12 +1,12 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :price, :item, :discount
+  attr_accessor :total, :price, :items, :discount
   
   def initialize(discount = 0)
     @total= 0 
     @discount= discount
-    @item= []
+    @items= []
   end
   
   def add_item(title, price, quantity=1)
@@ -23,6 +23,7 @@ class CashRegister
        return "There is no discount to apply."
      end
    end
+   
      
      def void_last_transaction
   end
