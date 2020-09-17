@@ -13,6 +13,7 @@ class CashRegister
     #binding.pry
     self.total += price*quantity
     3.times do @items << title
+  end
     
   
     end
