@@ -12,7 +12,8 @@ class CashRegister
   def add_item(title, price, quantity=1)
     #binding.pry
     self.total += price*quantity
-    @items << title
+    3.times do @items << title
+    
   
     end
     
